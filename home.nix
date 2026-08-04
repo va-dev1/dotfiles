@@ -34,6 +34,7 @@ in
       push = "git push";
       pull = "git pull";
       m = "git switch main";
+      gs = "git status";
       cc = "claude --dangerously-skip-permissions";
       co = "codex --full-auto";
     };
