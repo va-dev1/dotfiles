@@ -44,7 +44,7 @@ in
     enable = true;
     settings = {
       add_newline = false;
-      format = "$directory$git_branch$git_status$cmd_duration$line_break$character";
+      format = "$directory$hostname$git_branch$git_status$cmd_duration$line_break$character";
       character = {
         success_symbol = "[❯](purple)";
         error_symbol = "[❯](red)";
