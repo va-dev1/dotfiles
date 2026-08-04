@@ -114,3 +114,6 @@
 2026-08-01T02:35:22.087415Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
 2026-08-02T09:14:05.293252Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
 2026-08-03T18:33:17.150461Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-04T05:19:14.294277Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-08-04T05:19:14.607854Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.8.0"
+2026-08-04T05:19:14.728672Z  INFO herdr::update: auto-update check: v0.8.0 available through Homebrew, waiting for explicit install
