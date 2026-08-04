@@ -52,7 +52,7 @@ in
       cmd_duration.format = "[$duration]($style) ";
       hostname = {
         ssh_only = true;
-        ssh_symbol = ""; # Replace with your preferred Nerd Font icon
+        ssh_symbol = " "; # Replace with your preferred Nerd Font icon
           format = "[$ssh_symbol$hostname]($style) ";
         style = "bold dimmed yellow";
       };
