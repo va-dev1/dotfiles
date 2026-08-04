@@ -47,6 +47,13 @@
         "mosh"
     ];
     casks = [
+      "docker/tap/sbx"
+    ];
+    taps = [
+    {
+      name = "docker/tap";
+      trusted = true;
+    }
     ];
   };
 }
