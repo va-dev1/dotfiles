@@ -25,6 +25,7 @@
       persistent-apps = [];
       persistent-others = [];
       show-recents = false;
+      orientation = "left";
     };
     finder.FXPreferredViewStyle = "Nlsv";  # list view by default
       finder.CreateDesktop = false;          # clean desktop
