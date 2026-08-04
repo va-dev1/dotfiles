@@ -28,6 +28,9 @@ in
     initContent = ''
       bindkey '^f' autosuggest-accept
     '';
+    initExtra = ''
+      eval "$(ssh-agent -s)"
+    '';
     shellAliases = {
       ".." = "cd ..";
       add = "git add .";
@@ -37,6 +40,7 @@ in
       gs = "git status";
       cc = "claude --dangerously-skip-permissions";
       co = "codex --full-auto";
+      la = "ls -al";
     };
   };
 
