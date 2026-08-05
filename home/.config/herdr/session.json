@@ -2,11 +2,11 @@
   "version": 3,
   "workspaces": [
     {
-      "id": "w6",
+      "id": "w7",
       "custom_name": null,
-      "identity_cwd": "/Users/vaibhavsingh",
+      "identity_cwd": "/Users/vaibhavsingh/github/vaibhavsingh/dotfiles",
       "public_pane_numbers": {
-        "9": 1
+        "13": 1
       },
       "next_public_pane_number": 2,
       "public_tab_numbers": [
@@ -17,16 +17,16 @@
         {
           "custom_name": null,
           "layout": {
-            "Pane": 9
+            "Pane": 13
           },
           "panes": {
-            "9": {
-              "cwd": "/Users/vaibhavsingh"
+            "13": {
+              "cwd": "/Users/vaibhavsingh/github/vaibhavsingh/dotfiles"
             }
           },
           "zoomed": false,
-          "focused": 9,
-          "root_pane": 9
+          "focused": 13,
+          "root_pane": 13
         }
       ],
       "active_tab": 0

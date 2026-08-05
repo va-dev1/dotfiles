@@ -15,6 +15,7 @@ in
     jq        # json on the command line
     lazygit
     neovim
+    gh
     # the font everything renders in
     nerd-fonts.hack
   ];
@@ -30,6 +31,13 @@ in
     '';
     initExtra = ''
       eval "$(ssh-agent -s)"
+
+      # Enable Zsh Vi Mode
+      bindkey -v
+      export KEYTIMEOUT=1
+
+      # Fix backspace key working in Vi insert mode
+      bindkey '^?' backward-delete-char
     '';
     shellAliases = {
       ".." = "cd ..";

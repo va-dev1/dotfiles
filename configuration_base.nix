@@ -44,7 +44,8 @@
     onActivation.extraFlags = [ "--force" ];
     brews = [
       "herdr"
-        "mosh"
+       "mosh"
+       "node"
     ];
     casks = [
       "docker/tap/sbx"
