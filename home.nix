@@ -71,6 +71,38 @@ in
     };
   };
 
+  programs.gpg = {
+    enable = true;
+    settings = {
+      personal-cipher-preferences = "AES256 AES192 AES";
+      personal-digest-preferences = "SHA512 SHA384 SHA256";
+      cert-digest-algo = "SHA512";
+      keyid-format = "0xlong";
+      with-fingerprint = true;
+    };
+  };
+
+  services.gpg-agent = {
+    enable = true;
+    pinentry.package = pkgs.pinentry_mac;
+    defaultCacheTtl = 3600;
+    maxCacheTtl = 28800;
+  };
+
+  programs.password-store = {
+    enable = true;
+    package = pkgs.pass.withExtensions (exts: with exts; [
+      pass-otp
+    ]);
+    settings = {
+      PASSWORD_STORE_DIR = "${config.home.homeDirectory}/.password-store";
+      PASSWORD_STORE_CLIP_TIME = "45";
+      PASSWORD_STORE_GENERATED_LENGTH = "25";
+    };
+  };
+
+  home.sessionVariables.GPG_TTY = "$(tty)";
+
   # Edit-in-place: the real file stays in my repo, ~/.config just points at it.
   home.file.".config/wezterm".source =
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/wezterm";
