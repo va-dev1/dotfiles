@@ -31,6 +31,7 @@ in
     '';
     initExtra = ''
       eval "$(ssh-agent -s)"
+      eval "$(zoxide init zsh)"
 
       # Enable Zsh Vi Mode
       bindkey -v
