@@ -27,7 +27,7 @@ end
 
 wezterm.on('gui-startup', function(cmd)
   local screen = wezterm.gui.screens().main
-  local ratio = 0.9
+  local ratio = 0.98
   local width = screen.width * ratio
   local height = screen.height * ratio
   

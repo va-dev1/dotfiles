@@ -17,7 +17,7 @@
       AppleInterfaceStyle = "Dark";
       KeyRepeat = 2;          # fast key repeat
         InitialKeyRepeat = 15;  # short delay before repeat
-        _HIHideMenuBar = true;  # auto-hide the menu bar
+#        _HIHideMenuBar = true;  # auto-hide the menu bar
         AppleShowAllExtensions = true;
     };
     dock = {
@@ -40,12 +40,13 @@
   homebrew = {
     enable = true;
     onActivation.cleanup = "zap";  # remove anything not listed here
-      onActivation.autoUpdate = true;
+    onActivation.autoUpdate = true;
     onActivation.extraFlags = [ "--force" ];
     brews = [
       "herdr"
        "mosh"
        "node"
+       "zoxide"
     ];
     casks = [
       "docker/tap/sbx"
