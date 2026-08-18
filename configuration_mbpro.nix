@@ -46,6 +46,7 @@
       "google-chrome"
       "raycast"
       "claude-code"
+      "visual-studio-code"
     ];
   };
 }
