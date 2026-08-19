@@ -50,6 +50,7 @@
     ];
     casks = [
       "docker/tap/sbx"
+      "devpod"
     ];
     taps = [
     {
