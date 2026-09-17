@@ -47,6 +47,7 @@
       "raycast"
       "claude-code"
       "visual-studio-code"
+      "postman"
     ];
   };
 }
